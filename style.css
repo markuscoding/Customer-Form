@@ -171,6 +171,7 @@ p{
 
  @media (min-width: 360px){
   .header{
+    font-size: 25px;
     text-align: center;
   }
   .form-control{
