@@ -166,3 +166,28 @@ p{
   color: rgb(190, 13, 13);
  }
  
+
+ /* Media Query */
+
+ @media (min-width: 390px){
+  .header{
+    text-align: center;
+  }
+  .form-control{
+    width: 100%;
+  }
+
+}
+
+
+ @media (min-width: 480px){
+  .header{
+    text-align: center;
+  }
+  .form-control{
+    width: 100%;
+  }
+  .form-gender{
+    font-size: 10px;
+  }
+}
