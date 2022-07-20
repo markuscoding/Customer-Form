@@ -169,6 +169,17 @@ p{
 
  /* Media Query */
 
+ @media (min-width: 360px){
+  .header{
+    text-align: center;
+  }
+  .form-control{
+    width: 100%;
+  }
+
+}
+
+
  @media (min-width: 390px){
   .header{
     text-align: center;
