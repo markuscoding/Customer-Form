@@ -1,23 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    background-image: url(SuperStore.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+body {
+  background-image: url(grocery-store.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
-.container{
+.container {
   background-color: whitesmoke;
   border-radius: 15px;
   width: 600px;
@@ -27,7 +27,7 @@ body{
   margin: 50px;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
 }
-.header{
+.header {
   font-style: italic;
   font-weight: 700;
   display: flex;
@@ -35,21 +35,21 @@ body{
   padding: 20px;
   font-size: 30px;
 }
-legend{
+legend {
   text-align: center;
   padding: 20px 20px;
 }
-.form-control{
+.form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
-.form-control label{
+.form-control label {
   font-weight: 700;
   display: inline-block;
   margin-bottom: 5px;
 }
-.form-control input{
+.form-control input {
   border-radius: 5px;
   border: 2px solid black;
   display: block;
@@ -57,104 +57,113 @@ legend{
   width: 100%;
   font-size: 15px;
 }
-.form-control.success input{
-  border-color: rgb(3, 150, 3); /* if the input is success the color will turn green*/
+.form-control.success input {
+  border-color: rgb(
+    3,
+    150,
+    3
+  ); /* if the input is success the color will turn green*/
 }
-.form-control.error input{
-  border-color: rgb(219, 4, 4); /* if the input is error the color will turn red*/
+.form-control.error input {
+  border-color: rgb(
+    219,
+    4,
+    4
+  ); /* if the input is error the color will turn red*/
 }
-.form-control.success i.fa-circle-check{
-  visibility: visible;            /* circle check icon will appear once the input is success*/
+.form-control.success i.fa-circle-check {
+  visibility: visible; /* circle check icon will appear once the input is success*/
   color: rgb(3, 150, 3);
 }
-.form-control.error i.fa-exclamation{
-  visibility: visible;        /* exclamation icon will appear once the input is error*/
+.form-control.error i.fa-exclamation {
+  visibility: visible; /* exclamation icon will appear once the input is error*/
   color: rgb(219, 4, 4);
 }
-.form-control.error small{
-  visibility: visible;      /* error message will appear once the input is error*/
+.form-control.error small {
+  visibility: visible; /* error message will appear once the input is error*/
   color: rgb(219, 4, 4);
 }
-.form-control i{
+.form-control i {
   position: absolute;
-  top:35px;
-  right:10px;
+  top: 35px;
+  right: 10px;
   visibility: hidden;
 }
-.form-control small{
+.form-control small {
   position: absolute;
   bottom: 0;
   left: 0;
   visibility: hidden;
 }
-.form-gender{
- display: inline-block;
- font-weight: 700;
- margin-bottom: 10px;
+.form-gender {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
-.form-gender input{
+.form-gender input {
   margin-left: 20px;
 }
-.form-newsletter{
-  display: inline-block;  
+.form-newsletter {
+  display: inline-block;
   margin-bottom: 15px;
   font-weight: 700;
 }
-.form-newsletter input{
+.form-newsletter input {
   margin-left: 5px;
 }
-.form-newsletter p{
-padding-bottom: 0;
+.form-newsletter p {
+  padding-bottom: 0;
 }
-.form-question{
+.form-question {
   padding-bottom: 20px;
   font-weight: 700;
 }
-.form-question span{
+.form-question span {
   display: flex;
   margin-bottom: 15px;
 }
-.selectionInput{
+.selectionInput {
   height: 45px;
   width: 100%;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 15px;
 }
-.form-question  textarea{
+.form-question textarea {
   width: 100%;
   height: 150px;
   font-size: 20px;
- }
-.btn{
- width: 100%;
- padding: 10px ;
- margin-bottom: 20px; 
- background-color: rgb(78, 78, 175);
- color: #f0f0f0;
- font-weight: bold;
- cursor: pointer;
- font-size: 20px;
 }
-p{
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: rgb(78, 78, 175);
+  color: #f0f0f0;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+}
+p {
   font-weight: 700;
 }
 
-.displayBadge{
+.displayBadge {
   display: none;
   margin: 5px 0 10px 0;
   color: #fff;
   font-size: 14px;
 }
 
-.passwordSection{ /* dispalying the password requirements list*/
+.passwordSection {
+  /* dispalying the password requirements list*/
   width: 80%;
   display: inline-block;
   position: relative;
   padding-left: 20px;
   padding-bottom: 20px;
- }
- .passwordParameters{
+}
+.passwordParameters {
   display: none;
   width: 140px;
   background-color: #f1f1f1;
@@ -164,39 +173,33 @@ p{
   top: 50px;
   left: 105%;
   color: rgb(190, 13, 13);
- }
- 
+}
 
- /* Media Query */
+/* Media Query */
 
- @media (min-width: 360px){
-  .header{
+@media (min-width: 360px) {
+  .header {
     font-size: 25px;
     text-align: center;
   }
-  .form-control{
+  .form-control {
     width: 100%;
   }
-
 }
 
-
- @media (min-width: 390px){
-  .header{
+@media (min-width: 390px) {
+  .header {
     text-align: center;
   }
-  .form-control{
+  .form-control {
     width: 100%;
   }
-
 }
-
-
- @media (min-width: 480px){
-  .header{
+@media (min-width: 480px) {
+  .header {
     text-align: center;
   }
-  .form-control{
+  .form-control {
     width: 100%;
   }
 }

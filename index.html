@@ -1,96 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Customer Form</title>
-        <script src="https://kit.fontawesome.com/740662e7ea.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">Customer Contact Form </div>
-            <div id="error"></div>
-        <form  class="form" id="form" name="frmContact" onsubmit="return validateForm()"action="customers.php" 
-         method="post">
-            <div class="form-control" >
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-            <i class="fas fa-circle-check"></i>
-            <i class="fas fa-exclamation"></i>
-            <small>Error Message</small>
-            </div>
-            <div class="form-control">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                <i class="fas fa-circle-check"></i>
-                <i class="fas fa-exclamation"></i>
-                <small>Error Message</small>
-                </div>
-                <div class="form-gender">
-                    <label for="gender">Gender Type:</label>
-          <input type="radio" id="male" name="gender" value="male" checked class="smallRadio"> Male
-          <input type="radio" id="female" name="gender" value="female" class="smallRadio"> Female
-                </div>
-                <div class="form-control">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
-                    <i class="fas fa-circle-check"></i>
-                    <i class="fas fa-exclamation"></i>
-                    <small>Error Message</small>
-                    </div>
-                <div class="form-control">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Email Address">
-                    <i class="fas fa-circle-check"></i>
-                    <i class="fas fa-exclamation"></i>
-                    <small>Error Message</small>
-                    </div>
-                <div class="form-control">
-                    <label for="address1">Home Address</label>
-                    <input type="text" name="address1" id="address1" placeholder="Home Address">
-                    <i class="fas fa-circle-check"></i>
-                    <i class="fas fa-exclamation"></i>
-                    <small>Error Message</small>
-                    </div>
-                <div class="form-control">
-                    <label for="lotNumber">House Number</label>
-                    <input type="text" name="lotNumber" id="lotNumber" placeholder="House Number">
-                    <i class="fas fa-circle-check"></i>
-                    <i class="fas fa-exclamation"></i>
-                    <small>Error Message</small>
-                    </div>
-                 <div class="form-control">
-                     <select id="country" name="country" class="selectionInput">
-                    <option  selected value> Select your province </option>
-                    <option value="Alberta">Alberta</option>
-                    <option value="British Columbia">British Columbia</option>
-                    <option value="Manitoba">Manitoba</option>
-                    <option value="New Brunswick">New Brunswick</option>
-                    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
-                    <option value="Northwest Territories">Northwest Territories</option>
-                    <option value="Novia Scotia">Novia Scotia</option>
-                    <option value="Nunavut">Nunavut</option>
-                    <option value="Ontario">Ontario</option>
-                    <option value="Ontario">Prince Edward Island</option>
-                    <option value="Ontario">Quebec</option>
-                    <option value="Vancouver">Saskatchewan</option>
-                    <option value="Vancouver">Yukon</option>
-                    </select>
-                    <small>Error Message</small>
-                    </div>
-                <div class="form-control">
-                    <label for="password" class="passwordSection">
-                    Please enter complex password (16 digits include characters, symbols, integers, capital and small letters):
-                    <ul id="passwordRequirement" class="passwordParameters">
-                    <li id="digits" class="digits">16 Digits</li>
-                    <li id="symbol" class="symbol">Special Symbol</li>
-                    <li id="capital" class="capital">Capital Letters</li>
-                    <li id="number" class="number">Numbers</li>
-                    </ul>
-                    </label>
-                </div>
-                <div class="form-control">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Form</title>
+    <script
+      src="https://kit.fontawesome.com/740662e7ea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Customer Contact Form</div>
+      <div id="error"></div>
+      <form
+        class="form"
+        id="form"
+        name="frmContact"
+        onsubmit="return validateForm()"
+        action="customers.php"
+        method="post"
+      >
+        <div class="form-control">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Last Name"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-gender">
+          <label for="gender">Gender Type:</label>
+          <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            checked
+            class="smallRadio"
+          />
+          Male
+          <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+            class="smallRadio"
+          />
+          Female
+        </div>
+        <div class="form-control">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            name="phoneNumber"
+            id="phoneNumber"
+            placeholder="Phone Number"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="address1">Home Address</label>
+          <input
+            type="text"
+            name="address1"
+            id="address1"
+            placeholder="Home Address"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="lotNumber">House Number</label>
+          <input
+            type="text"
+            name="lotNumber"
+            id="lotNumber"
+            placeholder="House Number"
+          />
+          <i class="fas fa-circle-check"></i>
+          <i class="fas fa-exclamation"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <select id="country" name="country" class="selectionInput">
+            <option selected value>Select your province</option>
+            <option value="Alberta">Alberta</option>
+            <option value="British Columbia">British Columbia</option>
+            <option value="Manitoba">Manitoba</option>
+            <option value="New Brunswick">New Brunswick</option>
+            <option value="Newfoundland and Labrador">
+              Newfoundland and Labrador
+            </option>
+            <option value="Northwest Territories">Northwest Territories</option>
+            <option value="Novia Scotia">Novia Scotia</option>
+            <option value="Nunavut">Nunavut</option>
+            <option value="Ontario">Ontario</option>
+            <option value="Ontario">Prince Edward Island</option>
+            <option value="Ontario">Quebec</option>
+            <option value="Vancouver">Saskatchewan</option>
+            <option value="Vancouver">Yukon</option>
+          </select>
+          <small>Error Message</small>
+        </div>
+        <!-- <div class="form-control">
+          <label for="password" class="passwordSection">
+            Please enter complex password (16 digits include characters,
+            symbols, integers, capital and small letters):
+            <ul id="passwordRequirement" class="passwordParameters">
+              <li id="digits" class="digits">16 Digits</li>
+              <li id="symbol" class="symbol">Special Symbol</li>
+              <li id="capital" class="capital">Capital Letters</li>
+              <li id="number" class="number">Numbers</li>
+            </ul>
+          </label>
+        </div> -->
+        <!-- <div class="form-control">
                     <label for="password1">Password</label>
                     <input type="password" name="password1" id="password" placeholder="Password">
                     <i class="fas fa-circle-check"></i>
@@ -105,24 +162,42 @@
                     <i class="fas fa-exclamation"></i>
                     <small>Error Message</small>
                     <span id="confirmBadge" class="badge displayBadge confirmBadge">Weak</span>
-                    </div>
-                <div class="form-newsletter">
-                    <label for="newletter">NewsLetter:</label>
-                    <input type="checkbox" name="newsletter" id="newsletter" class="smallRadio" value="Yes" />
-                    <p>Send me monthly newsletter </p>
-                    </div>
-                <div class="form-question">
-                    <span class="">What is your question?</span>
-                    <textarea name="question" id="question" rows="5"></textarea>
-                    </div>
-                                        
-                    <button type="submit" name="Submit" id="Submit" value="Submit" class="btn" >Submit</button>
-                    <button type="reset" value="Reset" id="Reset" class="btn">Reset</button>
-                                        
-                <div class="form-control"><p class="noteSection">If you click submit, without filling out the text field, an error message will display.</p></div>
+                    </div> -->
+        <div class="form-newsletter">
+          <label for="newletter">NewsLetter:</label>
+          <input
+            type="checkbox"
+            name="newsletter"
+            id="newsletter"
+            class="smallRadio"
+            value="Yes"
+          />
+          <p>Send me monthly newsletter</p>
+        </div>
+        <div class="form-question">
+          <span class="">What is your question?</span>
+          <textarea name="question" id="question" rows="5"></textarea>
+        </div>
 
-        </form>
+        <button
+          type="submit"
+          name="Submit"
+          id="Submit"
+          value="Submit"
+          class="btn"
+        >
+          Submit
+        </button>
+        <button type="reset" value="Reset" id="Reset" class="btn">Reset</button>
+
+        <div class="form-control">
+          <p class="noteSection">
+            If you click submit, without filling out the text field, an error
+            message will display.
+          </p>
+        </div>
+      </form>
     </div>
-    </body>
-    <script src="newScript.js"></script>
+  </body>
+  <script src="newScript.js"></script>
 </html>
